@@ -66,7 +66,11 @@ function buildWidget(titleId) {
     btn.style.boxShadow = "0 4px 14px rgba(0,0,0,.45)";
   });
 
-  btn.addEventListener("click", () => window.open(streamUrl, "_blank"));
+  btn.addEventListener("click", () => {
+    window.open(streamUrl, "_blank");
+    // Track click — fire and forget, won't affect the stream opening
+    fetch("https://api.countapi.xyz/hit/imdb-play-extension/play").catch(() => {});
+  });
 
   document.body.appendChild(btn);
 }

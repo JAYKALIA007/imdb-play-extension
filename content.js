@@ -69,7 +69,7 @@ function buildWidget(titleId) {
   btn.addEventListener("click", () => {
     window.open(streamUrl, "_blank");
     // Track click — fire and forget, won't affect the stream opening
-    fetch("https://api.countapi.xyz/hit/imdb-play-extension/play").catch(() => {});
+    fetch("https://imdb-play-counter.jaykalia047.workers.dev/hit").catch(() => {});
   });
 
   document.body.appendChild(btn);

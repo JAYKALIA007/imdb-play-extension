@@ -50,7 +50,14 @@ Done. The extension is now active.
 - Automatically detects movie vs. series from the page
 - Blocks pop-up ads on the streaming page
 - No account or login required
-- No data collected, no tracking
+- Anonymously tracks total play button clicks (count only, no user data)
+
+---
+
+## Stats
+
+Total play button clicks across all users:
+👉 https://imdb-play-counter.jaykalia047.workers.dev/count
 
 ---
 
